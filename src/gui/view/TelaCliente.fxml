@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.ControllerTelaCliente">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="abaCadastrarCliente" text="Cadastrar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="37.0" text="CPF" />
+                        <TextField fx:id="txtCpf" layoutX="49.0" layoutY="33.0" prefHeight="25.0" prefWidth="147.0" />
+                        <Label layoutX="222.0" layoutY="37.0" text="RG" />
+                        <Label layoutX="8.0" layoutY="79.0" text="Nome" />
+                        <Label layoutX="404.0" layoutY="37.0" prefHeight="17.0" prefWidth="46.0" text="Genero" />
+                        <TextField fx:id="txtRG" layoutX="243.0" layoutY="33.0" />
+                        <TextField fx:id="txtNome" layoutX="49.0" layoutY="75.0" prefHeight="25.0" prefWidth="263.0" />
+                        <Spinner fx:id="spGenero" layoutX="450.0" layoutY="33.0" prefHeight="25.0" prefWidth="57.0" />
+                        <Label layoutX="318.0" layoutY="79.0" text="Apelido" />
+                        <TextField fx:id="txtApelido" layoutX="370.0" layoutY="75.0" />
+                        <Label layoutX="11.0" layoutY="117.0" text="Data de Nascimento" />
+                        <DatePicker fx:id="dtNascimento" layoutX="135.0" layoutY="113.0" />
+                        <Separator layoutX="-5.0" layoutY="138.0" prefHeight="24.0" prefWidth="610.0" />
+                        <Label layoutX="11.0" layoutY="162.0" text="Rua" />
+                        <Label layoutX="412.0" layoutY="162.0" text="Número" />
+                        <TextField fx:id="txtRua" layoutX="45.0" layoutY="158.0" prefHeight="25.0" prefWidth="362.0" />
+                        <TextField fx:id="txtNum" layoutX="462.0" layoutY="158.0" prefHeight="25.0" prefWidth="48.0" />
+                        <Label layoutX="11.0" layoutY="203.0" text="Cidade" />
+                        <TextField fx:id="txtCidade" layoutX="61.0" layoutY="199.0" />
+                        <Button fx:id="btSalvarCliente" layoutX="49.0" layoutY="262.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="97.0" text="Salvar" />
+                        <Button fx:id="btCancelarCliente" layoutX="270.0" layoutY="262.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="97.0" text="Cancelar" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Buscar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listViewCliente" layoutY="-1.0" prefHeight="372.0" prefWidth="600.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Alterar Clite">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Apagar Cliente">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
